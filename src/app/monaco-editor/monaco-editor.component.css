@@ -1,0 +1,15 @@
+.my-code-editor.editor-container {
+     height: calc(100vh - 100px);
+}
+#main { 
+    width: 85%;
+    min-height: 300px;
+    margin: 0 10px;
+    display: flex;
+}
+#sidebar{
+    padding: 10px;
+   -webkit-flex: 1; 
+    -ms-flex: 1; 
+    flex: 1; 
+}

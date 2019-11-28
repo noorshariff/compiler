@@ -1,0 +1,230 @@
+
+ <style>
+    .mat-icon-button .mat-icon, .mat-icon-button i {
+                  line-height: 39px;
+                  }
+                
+                
+                .dropdown {
+                  position: relative;
+                  display: inline-block;
+                }
+                
+                .dropdown-content {
+                  display: none;
+                  position: relative;
+
+                  /* background-color: #f1f1f1; */
+                  min-width: 160px;
+                  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+                  z-index: 1;
+
+                  position: static;
+                  margin-top: 65px;
+                  margin-left: -576px;
+                
+                }
+                
+                .dropdown-content a {
+                  color: rgb(218, 231, 220);
+                  padding: 12px 16px;
+                  text-decoration: none;
+                  display: block;
+                }
+                
+                .dropdown-content a:hover {background-color: rgb(41, 139, 65);}
+                
+                .dropdown:hover .dropdown-content {display: block;}
+                
+                .dropdown:hover .dropbtn {background-color: #3e8e41;}
+                </style>
+
+
+
+
+
+
+<div class="w3-container top">
+    <a class="w3schools-logo notranslate">SkillRary<span class="dotcom">.com</span></a>
+  </div>
+     
+  <div class="mt-4">
+    <nav class="navbar navbar-expand-lg navbar-light ">
+    
+  <!-- <mat-toolbar color="secondary"> -->
+    <!-- <mat-toolbar-row> -->
+     
+
+      <!-- <span class="menu-spacer"></span> -->
+    
+ 
+  
+     
+  
+   
+    <div class="container-fluid">
+          <ul class="navbar-nav mr-auto">
+              <div class="list-group list-group-horizontal  list-group-flush">
+                  <div  id="name" style=text-align:center class="btn btn-outline-success">{{name}}</div>
+
+                  <!-- <button mat-icon-button>
+                      <mat-icon (click)="sidenav.toggle()" id="button">menu</mat-icon>
+                    </button>
+                 -->
+      <li>
+       <li> <a href="#c"  role="tab"(click)=hide1() >C</a></li>
+       <li> <a href="#c++" role="tab" (click)=hide2() >C++</a></li>
+       <li> <a  href="#java" role="tab" (click)=hide3()>JAVA</a></li>
+       <li> <a  href="#python2"  role="tab"(click)=hide4()>PYTHON2</a></li>
+          
+       <li><a  href="#php"  role="tab"(click)=hide5()>PHP</a></li>
+       <li> <a  href="#ruby" role="tab" (click)=hide6()>RUBY</a></li>
+       <li> <a  href="#visual"  role="tab"(click)=hide7()>Visual Basic.Net</a></li>
+    
+             
+             
+          
+         
+    
+        
+          
+  
+
+          
+             <div class="dropdown container-fluid">
+          
+             <a>More <i class="fa fa-caret-down"></i></a>
+                   
+                 <div class="  list-group-flush dropdown-content row  ">
+              
+            <a   href="#perl"  role="tab" (click)=perl()>PERL</a>
+            <a  href="#fortran"  role="tab"(click)=fortran()>FORTRAN</a>
+            <a   href="#python"  role="tab"(click)=python()>PYTHON</a>
+            <a  href="#scala"  role="tab"(click)=scala()>SCALA</a>
+            <a  href="#cobol"  role="tab"(click)=cobol()>COBOL</a>
+            <a   href="#nodejs"  role="tab"(click)=nodejs()>NODEJS</a>
+            <a  href="#pascal"  role="tab"(click)=pascal()>PASCAL</a>
+            <a   href="#clojure"  role="tab"(click)=closure()>CLOJURE</a>
+            <a   href="#kotlin"  role="tab"(click)=kotlin()>KOTLIN</a>
+            <a  href="#small"  role="tab"(click)=smalltalk()>SMALLTALK</a>
+            <a  href="#groovy"  role="tab"(click)=groovy()>GROOVY</a>
+            <a  href="#pike"  role="tab"(click)=pike()>PIKE</a>
+            <a  href="#racket"  role="tab"(click)=racket()>RACKET</a>
+            <a href="#prolog"  role="tab"(click)=prolog()>PROLOG</a>
+            <a  href="#octave"  role="tab"(click)=octave()>OCTAVE</a>
+            <a   href="#coffee"  role="tab"(click)=coffeescript()>COFFEESCRIPT</a>
+            <a  href="#object"  role="tab"(click)=objectivec()>OBJECTIVE C</a>
+            <a  href="#clisp"  role="tab"(click)=clisp()>CLISP</a>
+            <a   href="#elixr"  role="tab"(click)=elixr()>ELIXR</a>
+            <a  href="#lolcode"  role="tab"(click)=lolcode()>LOLCODE</a>
+            <a  href="#"(click)=rust()>RUST</a>
+            <a href="#"(click)=r()>R</a>
+            <a  href="#"(click)=c()>C#</a>
+            <a   href="#"(click)=f()>F#</a>
+          </div> 
+          </div>
+        </div>
+            
+      </ul>
+    </div>
+    
+        <!-- </mat-toolbar-row> -->
+  
+   
+      <!-- </mat-toolbar>        -->
+                     
+      
+        </nav>            
+      </div>   
+    
+
+
+
+      <!-- <mat-sidenav-container>
+          <mat-sidenav #sidenav>
+              
+            <mat-nav-list>
+        
+              <a mat-list-item [routerLink]="'/accounts'"> Hello World </a>
+              <a mat-list-item [routerLink]="'/create-account'"> Fibbonacci series </a>
+              <a mat-list-item [routerLink]="'/contacts'"> Palindrome</a>
+              <a mat-list-item [routerLink]="'/create-contact'"> Swap </a>
+              
+      
+        
+            </mat-nav-list>
+          </mat-sidenav>
+          <mat-sidenav-content> -->
+
+
+           
+<button type="button" class="btn btn-outline-success mt-1" data-toggle="modal" data-target="#exampleModal">
+    Download Code
+    </button>
+   <!-- <div style="height: 88vh;"> -->
+        
+              <!-- <router-outlet></router-outlet>
+            </div>
+          </mat-sidenav-content>
+        </mat-sidenav-container> -->
+       
+
+
+
+
+
+
+
+<!-- <button type="button" class="btn btn-outline-success mt-1" data-toggle="modal" data-target="#exampleModal">
+  Download
+  </button> -->
+  
+  <!-- Modal -->
+  <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-body">
+          <form action="" #form='ngForm'>
+        <h6>Compiler.skillrary.com says</h6>
+        <label for="">Please enter file name:</label>
+        <div>
+        <input type="text" name='file' id='file'class="form-control" #file='ngModel' ngModel required>
+        <div *ngIf='file.invalid && file.touched'>
+          <p *ngIf='file.errors.required' class='alert alert-danger'>* This field is required</p>
+
+        </div>
+      </div>
+       
+              <a href="/files/download-file.html" download >
+            <button type="button" class="btn btn-outline-primary mt-2 mb-3" id='ok'>OK</button>&nbsp;&nbsp;</a>
+            <button type="button" class="btn btn-outline-primary mt-2 mb-3" id='cancel' data-dismiss="modal">Cancel</button>
+          </form>
+        
+         </div>
+        </div>
+      
+
+      </div>
+    <!-- </div> -->
+
+   
+
+        
+  
+
+      
+
+     
+    
+
+ 
+
+
+ 
+
+
+
+  
+      
+      
+      
