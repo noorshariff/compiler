@@ -1,6 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 
+
+
 @Component({
   selector: 'app-monaco-editor',
   templateUrl: './monaco-editor.component.html',
@@ -12,16 +14,13 @@ export class MonacoEditorComponent implements OnInit {
   language: 'javascript'
   
   };
-  
-
-  code: string = 'function x() {\nconsole.log("Hello world!");\n}';
+code: string = 'function x() {\nconsole.log("Hello world!");\n}';
   originalCode: string = 'function x() { // TODO }';
   constructor( private http: HttpClient) {}
-
+  
   ngOnInit() {
 }
-  
-  onInit(editor) {
+onInit(editor) {
     let line = editor.getPosition();
     console.log(line);
   }
